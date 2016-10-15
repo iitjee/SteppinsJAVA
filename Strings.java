@@ -18,7 +18,7 @@ String fromBool = Boolean.toString(myBoolValue); //Boolean is a helper class
 
 
 
-//Equality checking - Best Example
+//Equality checking - Best Example (This is what is called 'String Interning' )
         String str1 = "Hello";
         String str2 = "Hello";
 
