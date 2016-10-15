@@ -13,7 +13,7 @@
         String myStringFormatted = formatter.format(longValue);
         System.out.println(myStringFormatted);
 
-
+//For Currency, use getCurrencyInstance() :)
 
 
 
