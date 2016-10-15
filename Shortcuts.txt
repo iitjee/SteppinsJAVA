@@ -1,0 +1,16 @@
+
+
+
+
+1. Hover @Bottom-Left: and choose "Structure", u'll get methods list within a class
+2. If you click ^, bar will toggle
+
+3. Shift+fn+F1 = Documentation in New Browser
+4. ctrl +j = synopsis doc
+5. 
+
+6. Shift+opt+up/down = twiddles two lines
+
+
+
+
