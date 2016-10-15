@@ -7,9 +7,11 @@
 
 
 
-
-
-
+/* Number Formatting */
+        long longValue = 10_000_000;
+        NumberFormat formatter = NumberFormat.getNumberInstance();
+        String myStringFormatted = formatter.format(longValue);
+        System.out.println(myStringFormatted);
 
 
 
