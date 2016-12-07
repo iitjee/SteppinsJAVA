@@ -26,6 +26,8 @@ sb.append("");
 sb.append(number);
 return sb.toString();
 
+//Converting String to Number
+int foo = Integer.parseInt("1234");
 
 
 /* Booleans */
