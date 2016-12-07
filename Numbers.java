@@ -29,6 +29,7 @@ return sb.toString();
 //Converting String to Number
 int foo = Integer.parseInt("1234");
 double doo = Double.parseDouble("12.24");
+//Note that exceptions may arise if not proper. So handle them
 
 /* Booleans */
 boolean myNumber = false;
