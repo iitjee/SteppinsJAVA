@@ -1,10 +1,74 @@
 //You can see all errors in the 'Problems' Category in the file-structure drop-down menu
 
+/* Debugging (In this mode you should run in "dbug mode" not normal run mode*/
+//See 421319 Java EssTra
 
+/*Try - Catch Block */ //Just select your main code and go to code menu -> Surround with (or) opt + cmd + T
+//watch 421320
+try {
+ //your main code
+} catch (ExceptionType1 name) {
+
+} catch (ExceptionType2 name) {
+
+}
+//Like subclasses, exceptions also have subclasses
+//eg: ArrayIndexOutOfBoundsException is a subclass of Exception class
+
+
+/* Making and Throwing Custom Exception */
+//Standard exceptions are ArrayIndexOutOfBoundsException etc. but you can also make your own extensions
+
+try {
+//your main code
+  if(some condn) {
+      throw (new Exception("My Custom Message")); //now you need to handle this exception by making a catch clause
+  }
+} catch (Exception e) {
+  System.out.println(e.getMessage());
+}
+
+
+
+/* What is a stack trace?
+In simple terms, a stack trace is a list of the method calls that the application was in the middle of when an Exception was thrown.
+eg: Exception in thread "main" java.lang.NullPointerException
+        at com.example.myproject.Book.getTitle(Book.java:16)
+        at com.example.myproject.Author.getBookTitles(Author.java:25)
+        at com.example.myproject.Bootstrap.main(Bootstrap.java:14)
+        
+        This is a very simple stack trace. If we start at the beginning of the list of "at ...", we can tell where our error happened. What we're looking for is the topmost method call that is part of our application. In this case, it's:
+
+at com.example.myproject.Book.getTitle(Book.java:16)
+To debug this, we can open up Book.java and look at line 16, which is:
+
+public String getTitle() {
+    System.out.println(title.toString()); <-- line 16
+    return title;
+}
+This would indicate that something (probably title) is null in the above code.
+
+*/
+
+
+
+
+
+
+
+
+
+/*   THEORY  */
 /* https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html
-When an error occurs within a method, the method creates an object and hands it off to the runtime system. The object, called an exception object, contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called throwing an exception.
-After a method throws an exception, the runtime system attempts to find something to handle it. The set of possible "somethings" to handle the exception is the ordered list of methods that had been called to get to the method where the error occurred. The list of methods is known as the call stack
-The runtime system searches the call stack for a method that contains a block of code that can handle the exception. This block of code is called an exception handler. 
+When an error occurs within a method, the method creates an object and hands it off to the runtime system. 
+The object, called an exception object, contains information about the error, including its type and the state of the program when the error occurred.
+Creating an exception object and handing it to the runtime system is called throwing an exception.
+
+After a method throws an exception, the runtime system attempts to find something to handle it.
+The set of possible "somethings" to handle the exception is the ordered list of methods that had been called to get to the method where the error occurred.
+The list of methods is known as the "call stack".
+
+The runtime system searches the call stack for a method that contains an exception handler(a block of code) that can handle the exception.
 The search begins with the method in which the error occurred and proceeds through the call stack in the reverse order in which the methods were called. When an appropriate handler is found, the runtime system passes the exception to the handler.
 An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.
 
