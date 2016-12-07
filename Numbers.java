@@ -16,6 +16,17 @@
 //For Currency, use getCurrencyInstance() :)
 
 
+//Converting Number to String
+String.valueOf(number)
+Integer.toString(number)
+""+number;      //a bit overhead as it does the following:
+/* behind the scenes of ""+number */
+StringBuilder sb = new StringBuilder();
+sb.append("");
+sb.append(number);
+return sb.toString();
+
+
 
 /* Booleans */
 boolean myNumber = false;
