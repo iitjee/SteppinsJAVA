@@ -3,7 +3,7 @@ package java.lang.String //no need to declare explicitly
 
 String s1 = "Hey!"
 String s2 = new String("Hey");
-
+String[] months = {"Jan", "Feb", "Mar", "Apr"}; 
 
 // Characters to String
 char[] charArray = {'A', 'E', 'I', 'O', 'U'};
@@ -15,6 +15,21 @@ char[] charArray2 = s4.toCharacterArray();
 
 
 String fromBool = Boolean.toString(myBoolValue); //Boolean is a helper class
+
+/* Useful Properties and methods of Strings*/
+str.length()
+str.indexOf("My Substring"); //gives position of first letter
+str.substring(indexValue);
+str.trim() //removes whitespace before and after
+  
+/* Useful Properties and methods of Char Arrays*/
+chars.length
+
+
+/*String to Char Array */
+str.toCharArray()
+        
+
 
 
 
@@ -46,13 +61,6 @@ String fromBool = Boolean.toString(myBoolValue); //Boolean is a helper class
         }
 //Moral: Always use str1.equals(str2) or str4.equalsIgnoreCase(str5) for equality checking
 
-
-/* Useful Properties and methods */
-str.length()
-str.indexOf("My Substring"); //gives position of first letter
-str.substring(indexValue);
-str.trim() //removes whitespace before and after
-  
 
 
 
