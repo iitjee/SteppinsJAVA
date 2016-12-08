@@ -31,6 +31,9 @@ int foo = Integer.parseInt("1234");
 double doo = Double.parseDouble("12.24");
 //Note that exceptions may arise if not proper. So handle them
 
+/*      String+Integer = String */
+"Order number" + 23 = "Order Number 23"
+
 /* Booleans */
 boolean myNumber = false;
 
