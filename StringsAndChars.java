@@ -4,6 +4,7 @@ StringBuilder objects are however mutable
 
 Note:  You can use any String method on a StringBuilder object by first converting the string builder to a string with the toString() method of the StringBuilder class. Then convert the string back into a string builder using the StringBuilder(String str) constructor.
 
+      String+Integer = String => "Order number" + 23 = "Order Number 23"
 */
 
 
