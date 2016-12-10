@@ -20,6 +20,7 @@ System.arraycopy(myArr, 5, destinArry, 0, 5) //Copying array 2nd arg=first 5 ele
   /*  ArrayLists  */
 //ArrayList supports dynamic arrays that can grow as needed. Standard Java arrays are of a fixed length.
 ArrayList al = new ArrayList();
+/*or*/ ArrayList<String> al = new ArrayList();
 al.size()
 
       // add elements to the array list
