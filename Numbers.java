@@ -13,6 +13,11 @@
         String myStringFormatted = formatter.format(longValue);
         System.out.println(myStringFormatted);
 
+
+NumberFormat formatter = new DecimalFormat("#0.00"); //gets upto two decimal places
+System.out.println(formatter.format(4.0));
+DecimalFormat formatter = new DecimalFormat("#0.00"); //this also works fine
+
 //For Currency, use getCurrencyInstance() :)
 
 
